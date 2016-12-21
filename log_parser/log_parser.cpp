@@ -120,7 +120,7 @@ bool log_print(_In_ std::wstring file_name)
 		else if (it->ut_type == USER_PROCESS)
 		{
 			type_info(it->ut_type);
-			printf("\t %d\t %s\t %s\t %s",
+			printf("\t %d\t %s\t %s\t %s\n",
 				it->ut_pid,
 				it->ut_line,
 				it->ut_user,
@@ -146,10 +146,10 @@ bool log_print(_In_ std::wstring file_name)
 
 int wmain(int argc, wchar_t *argv[])
 {
-	if (argc == 2)
-		log_print(argv[1]);
-	else
-		printf("log_parser.exe [file_name]\n");
-
+	//if (argc == 2)
+	//	log_print(argv[1]);
+	//else
+	//	printf("log_parser.exe [file_name]\n");
+	log_print(L"wtmp");
 	return 0;
 }
