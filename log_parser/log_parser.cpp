@@ -146,10 +146,10 @@ bool log_print(_In_ std::wstring file_name)
 
 int wmain(int argc, wchar_t *argv[])
 {
-	//if (argc == 2)
-	//	log_print(argv[1]);
-	//else
-	//	printf("log_parser.exe [file_name]\n");
-	log_print(L"wtmp");
+	if (argc == 2)
+		log_print(argv[1]);
+	else
+		printf("log_parser.exe [file_name]\n");
+
 	return 0;
 }
