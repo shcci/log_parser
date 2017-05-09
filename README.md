@@ -3,12 +3,12 @@ utmp, wtmp of linux parser
 
 windows version
 
-##Build
+## Build
 * Visual Studio 2015 Community
 
-##Usage
+## Usage
 log_parser.exe [file_name]
-###Example
+### Example
 ```
 C:\Users\xinfolab> log_parser.exe utmp
 reboot           4.4.0-31-generic        Tue Nov 29 18:39:28 2016
